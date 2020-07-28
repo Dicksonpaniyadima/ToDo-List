@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <script src="weatherapi.js" defer></script>
 </head>
 
 <body>
@@ -18,12 +19,19 @@
         <input type="text" name="content" id="content" placeholder="Enter your task here.." autocomplete="off">
         <button type="submit" id="btn">Add to-do</button>
     </form>
-    <h2>TASKS</h2>
-    <ul id="ul-container">
-    </ul>
-    <h2>FINISHED TASKS</h2>
-    <ul id="complete-container">
-    </ul>
+    <div id="wrapper">
+        <h2>TASKS</h2>
+        <ul id="ul-container">
+        </ul>
+        <h2>FINISHED TASKS</h2>
+        <ul id="complete-container">
+        </ul>
+    </div>
+    <div id="api-container">
+        Want to know your location and temperature ?
+        <button type="submit" class="api-btn">Click here.. </button>
+
+    </div>
 </body>
 
 </html>
